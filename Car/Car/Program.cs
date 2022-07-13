@@ -4,26 +4,29 @@ using System.Collections;
 using System.Collections.Generic;
 
 //-----------------------------------------------------------------
-//ArraysAndLists
+//Car
 //
 // Name: David Zientara
-// Date: 7-8-2022
-// Comments: An exercise in arrays and lists
+// Date: 7-13-2022
+// Comments: An exercise in classes
 // Added methods per the instructions
 //-----------------------------------------------------------------
 class Car
 {
+    //Added Make, Model and Year
+    //Made Make + Model nullable
     public string? Make, Model;
     public int Year;
 
 
     public static void Main()
     {
+        //Create a car and change the properties
         Car car = new Car();
         car.Make = "Volkswagen";
         car.Model = "Golf";
         car.Year = 1992;
-
+        //Print it out
         Console.WriteLine($"Your car is a {car.Year} {car.Make} {car.Model} ");
 
     }
