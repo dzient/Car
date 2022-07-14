@@ -11,16 +11,21 @@ using System.Collections.Generic;
 // Comments: An exercise in classes
 // Added methods per the instructions
 //-----------------------------------------------------------------
+
+
+
 class Car
 {
     //Added Make, Model and Year
     //Made Make + Model nullable
-    public string? Make, Model;
+    public string? Make { get; set; }
+    public string? Model { get; set; }
     public int Year;
 
 
     public static void Main()
     {
+       
         //Create a car and change the properties
         Car car = new Car();
         car.Make = "Volkswagen";
